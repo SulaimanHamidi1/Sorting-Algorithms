@@ -152,7 +152,7 @@ public class Sort {
         return heapArr;
     }
 
-    public static void inPlace(int[] arr){
+    public static void inPlaceHeapsSort(int[] arr){
         Queue<Integer> pq = new PriorityQueue<>();
 
         for (int i : arr){
