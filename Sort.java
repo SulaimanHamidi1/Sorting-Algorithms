@@ -59,7 +59,7 @@ public class Sort {
         }
     }
 
-    public static int[] merge (int[] arr1, int[] arr2){
+    private static int[] merge (int[] arr1, int[] arr2){
         int[] combined = new int[arr1.length + arr2.length];
         int index = 0;
         int i = 0;
@@ -105,7 +105,7 @@ public class Sort {
         return merge(left, right);
     }
 
-    public static void swap (int[] arr, int first, int second){
+    private static void swap (int[] arr, int first, int second){
         if (arr.length == 1) return;
         int temp = arr[first];
         arr[first] = arr[second];
@@ -125,7 +125,7 @@ public class Sort {
         return swapIndex;
     }
 
-    public static void quickSortHelper (int[] arr, int left, int right){
+    private static void quickSortHelper (int[] arr, int left, int right){
         if (left < right){
             int pivotIndex = pivot(arr, left, right);
             quickSortHelper(arr, left, pivotIndex - 1);
